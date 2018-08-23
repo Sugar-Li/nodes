@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //arguments变量写法
+    function sortNumber() {
+        //因为arguments是一个类似数组的对象，所以必须先转化成数组才能进行排序
+        return Array.prototype.slice.call(arguments).sort()
+    }
+
+    //rest参数的写法
+    // rest 本身就参数变量组成的数组，可以直接调用方法
+    const sortNumber = (...numbers) => {
+        return numbers.sort()
+    }
+</script>
+</body>
+</html>
