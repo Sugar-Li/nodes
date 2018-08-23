@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function move({x=1,y=3}={}) {
+        return[x,y]
+    }
+    console.log(move({x:11,y:33}))//[11,33]
+    console.log(move({x:11}))//[11,3]
+    console.log(move({}))//[1,3]
+    console.log(move())//[1,3]
+
+    // function move({x,y}={x:1,y:3}) {
+    //     return[x,y]
+    // }
+    // console.log(move({x:11,y:33}))//[11,33]
+    // console.log(move({x:11}))//[11,undefined]
+    // console.log(move({}))//[undefined,undefined]
+    // console.log(move())//[1,3]
+</script>
+</body>
+</html>
